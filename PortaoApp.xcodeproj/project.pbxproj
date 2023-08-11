@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F475CC9C2A863C820021088A /* PortaoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CC9B2A863C820021088A /* PortaoAppApp.swift */; };
+		F475CC9E2A863C820021088A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CC9D2A863C820021088A /* ContentView.swift */; };
+		F475CCA02A863C850021088A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F475CC9F2A863C850021088A /* Assets.xcassets */; };
+		F475CCA32A863C850021088A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F475CCA22A863C850021088A /* Preview Assets.xcassets */; };
+		F475CCAD2A863C860021088A /* PortaoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CCAC2A863C860021088A /* PortaoAppTests.swift */; };
+		F475CCB72A863C860021088A /* PortaoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CCB62A863C860021088A /* PortaoAppUITests.swift */; };
+		F475CCB92A863C860021088A /* PortaoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CCB82A863C860021088A /* PortaoAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F475CCA92A863C860021088A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F475CC902A863C820021088A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F475CC972A863C820021088A;
+			remoteInfo = PortaoApp;
+		};
+		F475CCB32A863C860021088A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F475CC902A863C820021088A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F475CC972A863C820021088A;
+			remoteInfo = PortaoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F475CC982A863C820021088A /* PortaoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortaoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F475CC9B2A863C820021088A /* PortaoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortaoAppApp.swift; sourceTree = "<group>"; };
+		F475CC9D2A863C820021088A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F475CC9F2A863C850021088A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F475CCA22A863C850021088A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F475CCA82A863C860021088A /* PortaoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortaoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F475CCAC2A863C860021088A /* PortaoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortaoAppTests.swift; sourceTree = "<group>"; };
+		F475CCB22A863C860021088A /* PortaoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortaoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F475CCB62A863C860021088A /* PortaoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortaoAppUITests.swift; sourceTree = "<group>"; };
+		F475CCB82A863C860021088A /* PortaoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortaoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F475CC952A863C820021088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F475CCA52A863C860021088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F475CCAF2A863C860021088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F475CC8F2A863C820021088A = {
+			isa = PBXGroup;
+			children = (
+				F475CC9A2A863C820021088A /* PortaoApp */,
+				F475CCAB2A863C860021088A /* PortaoAppTests */,
+				F475CCB52A863C860021088A /* PortaoAppUITests */,
+				F475CC992A863C820021088A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F475CC992A863C820021088A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F475CC982A863C820021088A /* PortaoApp.app */,
+				F475CCA82A863C860021088A /* PortaoAppTests.xctest */,
+				F475CCB22A863C860021088A /* PortaoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F475CC9A2A863C820021088A /* PortaoApp */ = {
+			isa = PBXGroup;
+			children = (
+				F475CC9B2A863C820021088A /* PortaoAppApp.swift */,
+				F475CC9D2A863C820021088A /* ContentView.swift */,
+				F475CC9F2A863C850021088A /* Assets.xcassets */,
+				F475CCA12A863C850021088A /* Preview Content */,
+			);
+			path = PortaoApp;
+			sourceTree = "<group>";
+		};
+		F475CCA12A863C850021088A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F475CCA22A863C850021088A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F475CCAB2A863C860021088A /* PortaoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F475CCAC2A863C860021088A /* PortaoAppTests.swift */,
+			);
+			path = PortaoAppTests;
+			sourceTree = "<group>";
+		};
+		F475CCB52A863C860021088A /* PortaoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F475CCB62A863C860021088A /* PortaoAppUITests.swift */,
+				F475CCB82A863C860021088A /* PortaoAppUITestsLaunchTests.swift */,
+			);
+			path = PortaoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F475CC972A863C820021088A /* PortaoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F475CCBC2A863C860021088A /* Build configuration list for PBXNativeTarget "PortaoApp" */;
+			buildPhases = (
+				F475CC942A863C820021088A /* Sources */,
+				F475CC952A863C820021088A /* Frameworks */,
+				F475CC962A863C820021088A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PortaoApp;
+			productName = PortaoApp;
+			productReference = F475CC982A863C820021088A /* PortaoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F475CCA72A863C860021088A /* PortaoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F475CCBF2A863C860021088A /* Build configuration list for PBXNativeTarget "PortaoAppTests" */;
+			buildPhases = (
+				F475CCA42A863C860021088A /* Sources */,
+				F475CCA52A863C860021088A /* Frameworks */,
+				F475CCA62A863C860021088A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F475CCAA2A863C860021088A /* PBXTargetDependency */,
+			);
+			name = PortaoAppTests;
+			productName = PortaoAppTests;
+			productReference = F475CCA82A863C860021088A /* PortaoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F475CCB12A863C860021088A /* PortaoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F475CCC22A863C860021088A /* Build configuration list for PBXNativeTarget "PortaoAppUITests" */;
+			buildPhases = (
+				F475CCAE2A863C860021088A /* Sources */,
+				F475CCAF2A863C860021088A /* Frameworks */,
+				F475CCB02A863C860021088A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F475CCB42A863C860021088A /* PBXTargetDependency */,
+			);
+			name = PortaoAppUITests;
+			productName = PortaoAppUITests;
+			productReference = F475CCB22A863C860021088A /* PortaoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F475CC902A863C820021088A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F475CC972A863C820021088A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F475CCA72A863C860021088A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F475CC972A863C820021088A;
+					};
+					F475CCB12A863C860021088A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F475CC972A863C820021088A;
+					};
+				};
+			};
+			buildConfigurationList = F475CC932A863C820021088A /* Build configuration list for PBXProject "PortaoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F475CC8F2A863C820021088A;
+			productRefGroup = F475CC992A863C820021088A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F475CC972A863C820021088A /* PortaoApp */,
+				F475CCA72A863C860021088A /* PortaoAppTests */,
+				F475CCB12A863C860021088A /* PortaoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F475CC962A863C820021088A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F475CCA32A863C850021088A /* Preview Assets.xcassets in Resources */,
+				F475CCA02A863C850021088A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F475CCA62A863C860021088A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F475CCB02A863C860021088A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F475CC942A863C820021088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F475CC9E2A863C820021088A /* ContentView.swift in Sources */,
+				F475CC9C2A863C820021088A /* PortaoAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F475CCA42A863C860021088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F475CCAD2A863C860021088A /* PortaoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F475CCAE2A863C860021088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F475CCB72A863C860021088A /* PortaoAppUITests.swift in Sources */,
+				F475CCB92A863C860021088A /* PortaoAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F475CCAA2A863C860021088A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F475CC972A863C820021088A /* PortaoApp */;
+			targetProxy = F475CCA92A863C860021088A /* PBXContainerItemProxy */;
+		};
+		F475CCB42A863C860021088A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F475CC972A863C820021088A /* PortaoApp */;
+			targetProxy = F475CCB32A863C860021088A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F475CCBA2A863C860021088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F475CCBB2A863C860021088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F475CCBD2A863C860021088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PortaoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = recipeapp.PortaoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F475CCBE2A863C860021088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PortaoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = recipeapp.PortaoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F475CCC02A863C860021088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = recipeapp.PortaoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortaoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PortaoApp";
+			};
+			name = Debug;
+		};
+		F475CCC12A863C860021088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = recipeapp.PortaoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PortaoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PortaoApp";
+			};
+			name = Release;
+		};
+		F475CCC32A863C860021088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = recipeapp.PortaoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PortaoApp;
+			};
+			name = Debug;
+		};
+		F475CCC42A863C860021088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = recipeapp.PortaoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PortaoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F475CC932A863C820021088A /* Build configuration list for PBXProject "PortaoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F475CCBA2A863C860021088A /* Debug */,
+				F475CCBB2A863C860021088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F475CCBC2A863C860021088A /* Build configuration list for PBXNativeTarget "PortaoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F475CCBD2A863C860021088A /* Debug */,
+				F475CCBE2A863C860021088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F475CCBF2A863C860021088A /* Build configuration list for PBXNativeTarget "PortaoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F475CCC02A863C860021088A /* Debug */,
+				F475CCC12A863C860021088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F475CCC22A863C860021088A /* Build configuration list for PBXNativeTarget "PortaoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F475CCC32A863C860021088A /* Debug */,
+				F475CCC42A863C860021088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F475CC902A863C820021088A /* Project object */;
+}
