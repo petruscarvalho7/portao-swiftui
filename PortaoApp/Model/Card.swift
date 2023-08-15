@@ -16,7 +16,7 @@ struct Card: Identifiable {
 
 var cardsMock: [Card] = [
     Card(cardColor: .cyan, cardName: "iPortao", cardBalance: "$2000"),
-    Card(cardColor: .blue, cardName: "cardPress", cardBalance: "Unlimited"),
+    Card(cardColor: .blue, cardName: "PressCard 💰", cardBalance: "Unlimited Money"),
     Card(cardColor: .purple, cardName: "iPeladao", cardBalance: "$5600"),
     Card(cardColor: .red, cardName: "iRobbedYou", cardBalance: "$10000")
 ]

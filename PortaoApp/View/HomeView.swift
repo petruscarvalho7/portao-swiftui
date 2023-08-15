@@ -20,15 +20,29 @@ struct HomeView: View {
     @State private var selectedCard: Card?
     @Namespace private var namespace
     
+    // Menu
+    @Binding var showMenu: Bool
+    
     var body: some View {
         VStack(spacing: 0) {
+            // topbar
             HStack {
                 Button {
-                    
+                    withAnimation(.spring) {
+                        showMenu.toggle()
+                    }
                 } label: {
-                    Image(systemName: "line.3.horizontal")
-                        .font(.title2)
-                        .foregroundColor(.black)
+                    ZStack {
+                        if showMenu {
+                            Image(systemName: "xmark")
+                                .font(.title2)
+                                .foregroundColor(.black)
+                        } else {
+                            Image(systemName: "line.3.horizontal.decrease")
+                                .font(.title2)
+                                .foregroundColor(.black)
+                        }
+                    }
                 }
                 
                 Spacer()
@@ -43,11 +57,13 @@ struct HomeView: View {
                         .fontWeight(.bold)
                 }
             }
-            .padding([.horizontal, .top], 15)
+            .padding(.horizontal, 15)
+            .padding(.top, showMenu ? 30 : 50)
             
             // Cards
             CardsView()
                 .padding(.horizontal, 15)
+                .padding(.top, showMenu ? 50 : 0)
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 15) {
@@ -56,7 +72,6 @@ struct HomeView: View {
                 .padding(.top, 30)
                 .padding([.horizontal, .bottom], 15)
             }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             .background {
                 // CustomCorner
                 CustomCornerShape(corners: [.topLeft, .topRight], radius: 30)
@@ -66,11 +81,17 @@ struct HomeView: View {
             }
             .padding(.top, 20)
         }
-        .background {
-            Rectangle()
-                .fill(.black.opacity(0.05))
-                .ignoresSafeArea()
-        }
+        .cornerRadius(showMenu ? 25 : 0)
+        .background(
+            Color("Secondary")
+                .cornerRadius(showMenu ? 25 : 0)
+        )
+        .rotation3DEffect(
+            .init(degrees: showMenu ? -22.5 : 0),
+            axis: (x: 0, y: 1, z: 0)
+        )
+        .offset(x: showMenu ? (getRect().width / 2) + 30 : 0)
+        .ignoresSafeArea()
         .overlay {
             Rectangle()
                 .fill(.ultraThinMaterial)
@@ -216,21 +237,23 @@ extension HomeView {
                                 // hiding cards when the detail is displayed
                                 .offset(y: showDetailView ? size.height : 0)
                                 .onTapGesture {
-                                    if expandCards {
-                                        // expanding selected card
-                                        selectedCard = card
-                                        withAnimation(.easeInOut(duration: 0.3)) {
-                                            showDetailView = true
-                                        }
-                                        
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                                    if !showMenu {
+                                        if expandCards {
+                                            // expanding selected card
+                                            selectedCard = card
                                             withAnimation(.easeInOut(duration: 0.3)) {
-                                                showDetailContent = true
+                                                showDetailView = true
                                             }
-                                        }
-                                    } else {
-                                        withAnimation(.easeInOut(duration: 0.35)) {
-                                            expandCards = true
+                                            
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                                                withAnimation(.easeInOut(duration: 0.3)) {
+                                                    showDetailContent = true
+                                                }
+                                            }
+                                        } else {
+                                            withAnimation(.easeInOut(duration: 0.35)) {
+                                                expandCards = true
+                                            }
                                         }
                                     }
                                 }

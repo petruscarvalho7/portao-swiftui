@@ -12,7 +12,7 @@ struct ContentView: View {
         GeometryReader {
             let size = $0.size
             
-            HomeView(size: size)
+            LoggedInView(size: size)
         }
         .preferredColorScheme(.light)
     }
